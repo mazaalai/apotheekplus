@@ -45,8 +45,9 @@
 
 
 <?php 
-$conninfo = array("Database" => "Databasename");
-$conn = sqlsrv_connect($servername, $conninfo);
+$conn = new mysqli("localhost","root","","");
+
+
 
 if (isset($_POST["submit"]))
 {
